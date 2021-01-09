@@ -1,1 +1,1 @@
-# resource.github.io
+# resources.github.io
