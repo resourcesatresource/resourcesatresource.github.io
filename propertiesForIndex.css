@@ -1,2 +1,18 @@
-p{background-color:#ff00aa; border-radius: 10%; width: 10%; height: 10%; text-align: center;}
-body{background-color: darkgray;}
+body{
+    color: blanchedalmond;
+    background-color: black;
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+a:hover{
+          color: crimson;
+}
