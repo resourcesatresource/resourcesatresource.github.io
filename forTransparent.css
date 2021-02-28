@@ -1,0 +1,25 @@
+.makeTransparent{
+    background-color: white;
+    border-radius: 15px;
+    min-height: 80vh;
+    width: 60%;
+    background: linear-gradient(to right top, rgba(255,255,255,0.8),rgba(255,255,255,0.2));
+    z-index: 6;
+    }
+    
+main{
+    background:linear-gradient(to right top,cyan,rgba(255, 0, 0,0.8),black);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.square{
+    width: 10rem;
+    height: 10rem;
+    background:linear-gradient(to right top,black,rgba(255, 0, 0,0.8),cyan);
+    position: absolute;
+    left: 15%;
+    bottom: 2%;
+    border-radius: 15px;
+}
