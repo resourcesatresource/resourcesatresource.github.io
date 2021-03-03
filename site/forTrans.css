@@ -1,0 +1,33 @@
+*{margin:0px; padding:0px;}
+
+.includeImage{
+    background-image: url("https://drive.google.com/file/d/1FnEFvJ5H3Z_5iOinvYnR2jDGGFFq__d7/view?usp=sharing");
+}
+.division{
+    width:100px;
+    height:20px;
+    background:green;
+    transition:width 0.5s;
+    border-radius:20px;
+    margin-top:5px;
+    display: inline-flex;
+}
+.wrapAroundMenuElement li{
+    padding:8px; width:100px;
+    border-radius:20px;
+    background:red;
+    text-align:center;
+    border:solid 2px black;
+}
+ol{
+    display: inline-flex;
+    list-style-type: none;
+}
+ol li{
+    padding-left: 4px;
+}
+a{
+    text-decoration: none;
+    text-anchor: end;
+}
+
