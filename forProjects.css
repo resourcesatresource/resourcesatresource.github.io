@@ -1,0 +1,10 @@
+*{
+    margin: 0px;
+}
+body{
+    color: white;
+    background-color: black;
+}
+iframe{
+    width: fit-content;
+}
