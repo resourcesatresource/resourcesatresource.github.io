@@ -13,7 +13,7 @@
     }
     
 main{
-    background:linear-gradient(to right top,black,gray,black);
+    background:linear-gradient(to right,#ffaacc,#f6cc88);
     min-height: 100vh;
     display: flex;
     align-items: center;
