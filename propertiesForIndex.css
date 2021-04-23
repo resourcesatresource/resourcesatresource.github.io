@@ -57,3 +57,25 @@ a:hover{
     padding-right: 5px;
     border-radius: 5px;
 }
+.backInStack{
+    width: 90%;
+    height: 25%;
+    background-color: #bbb2e9;
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    z-index: -1;
+    border-radius: 0px 0px 25px 0px;
+
+}
+.backInStack1{
+    width: 90%;
+    height: 25%;
+    background-color: #bbb2e9;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+    border-radius: 25px 0px 0px 0px;
+
+}
