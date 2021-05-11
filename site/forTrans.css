@@ -1,33 +1,55 @@
 *{margin:0px; padding:0px;}
-
-.includeImage{
-    background-image: url("https://drive.google.com/file/d/1FnEFvJ5H3Z_5iOinvYnR2jDGGFFq__d7/view?usp=sharing");
-}
-.division{
-    width:100px;
-    height:20px;
-    background:green;
-    transition:width 0.5s;
-    border-radius:20px;
-    margin-top:5px;
-    display: inline-flex;
+.wrapAroundMenuElement{
+    width: 200px;
+    height: 100%;
+    background: rgba(255,255,255,0.4);
+    text-align: center;
+    position: fixed;
+    z-index: -1;
 }
 .wrapAroundMenuElement li{
-    padding:8px; width:100px;
-    border-radius:20px;
-    background:red;
+    padding:12px;
+    border-radius:0px;
+    background:rgba(255, 000, 000, 0.8);
     text-align:center;
-    border:solid 2px black;
-}
-ol{
-    display: inline-flex;
-    list-style-type: none;
-}
-ol li{
-    padding-left: 4px;
+    font-size: 28px;
+    color: #000;
+    border-bottom:solid 0.5px black;
+    display: block;
+    margin-top: 2px;
+    box-shadow: 2px 2px 5px black;
 }
 a{
     text-decoration: none;
-    text-anchor: end;
+    color: black;
+}
+body{
+    background:#123456;
 }
 
+.search{
+    padding:8px;
+    background:#fff;
+    border-radius:5px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.division{
+    margin-left: 200px;
+    height:1024px;
+}
+.head{
+    width: 100%;
+    height: 5%;
+    background: #fff;
+    z-index: 1;
+}
+.button{
+    width: 20%;
+    background: white;
+    border: #000 1px solid;
+    display: inline-block;
+    justify-content: space-between;
+    font-size: 18px;
+    padding: 12px;
+}
