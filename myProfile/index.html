@@ -25,10 +25,7 @@
                 return response.json();
             })
             .then(data =>{
-                console.log(data);
-                console.log(data.youtube);
-                console.log(JSON.stringify(youtube));
-                document.getElementById("youtubeLink").setAttribute("href", data.youtube)
+                document.getElementById("youtubeLink").href = data.youtube;
             });
         </script>
     </body>
