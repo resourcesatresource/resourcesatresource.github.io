@@ -20,5 +20,17 @@
             <p>YouTube:</p>
             <p><a href="https://www.youtube.com/channel/UCHowgTManguhRpisom5Rbrg">youtube/SauravSanjay</a></p>
         </div>
+        <div class="textEffect">
+            <p>LinkedIn:</p>
+            <p><a href="" id="youtubeLink">youtube/SauravSanjay</a></p>
+        </div>
+        <script>
+            fetch('./myLinks.json').then(response =>{
+                return response.json();
+            })
+            .then(data =>{
+                console.log(data);
+            });
+        </script>
     </body>
 </html>
