@@ -18,10 +18,6 @@
         </div>
         <div class="textEffect">
             <p>YouTube:</p>
-            <p><a href="https://www.youtube.com/channel/UCHowgTManguhRpisom5Rbrg">youtube/SauravSanjay</a></p>
-        </div>
-        <div class="textEffect">
-            <p>LinkedIn:</p>
             <p><a href="" id="youtubeLink">youtube/SauravSanjay</a></p>
         </div>
         <script>
@@ -30,6 +26,9 @@
             })
             .then(data =>{
                 console.log(data);
+                console.log(data.youtube);
+                console.log(JSON.stringify(youtube));
+                document.getElementById("youtubeLink").setAttribute("href", data.youtube)
             });
         </script>
     </body>
