@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <title>Storage</title>
+</head>
+<body id="wholeBodyData">
+    <p id="myPara">Normal!</p>
+    <i class="fas fa-adjust" onclick="changeTheme()"></i>
+    <script>
+        if(typeof(Storage) != "undefined")
+        {
+            window.localStorage.setItem("browserSupport","yes");
+            console.log(window.localStorage.getItem("browserSupport"));
+        }
+        else{
+            console.log("!");
+        }
+        function changeTheme()
+        {
+            if(window.localStorage.getItem("currentThemeStatus"))
+            {
+                console.log("Yes");
+                changeNow();
+            }
+            else{
+                console.log("No");
+                window.localStorage.setItem("currentThemeStatus","Light");
+                changeNow();
+            }
+        }
+        function changeNow()
+        {
+            var status = window.localStorage.getItem("currentThemeStatus");
+            if(status == "Light")
+            {
+                var bodyRef = document.getElementById("wholeBodyData");
+                bodyRef.style.background="#000";
+                bodyRef.style.color="#fff";
+                window.localStorage.setItem("currentThemeStatus","Dark");
+            }
+            else if(status == "Dark")
+            {
+                var bodyRef = document.getElementById("wholeBodyData");
+                bodyRef.style.background="#fff";
+                bodyRef.style.color="#000";
+                window.localStorage.setItem("currentThemeStatus","Light");
+            }
+        }
+    </script>
+</body>
+</html>
