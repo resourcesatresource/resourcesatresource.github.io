@@ -14,8 +14,6 @@
     border-radius: 50%;
     border: 10px solid white;
 }
-img{
-}
 .backgroundForImage{
     background-image: url(defaultPhoto.jpg);
     border-radius: 25px;
