@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Converter</title>
+    <script>
+        function convert()
+        {
+            var fahrenheit = "Null";
+            var celsius = "Null";
+            var fahrenheit = document.getElementById("f").value;
+            var celsius = document.getElementById("c").value;
+            console.log(fahrenheit + " " + celsius);
+            if(fahrenheit == "" && celsius!="")
+            {
+                console.log("Message:\nInput: Celsius\nOutput: Fahrenheit");
+                document.getElementById("f").value = ((parseFloat(celsius) * 9/5) +32) + " F";
+            }
+            else if(celsius == "" && fahrenheit!="")
+            {
+                console.log("Message:\nInput: Fahrenheit\nOutput: Celsius");
+                document.getElementById("c").value = ((parseFloat(fahrenheit) - 32)*5/9) + " C";
+                
+            }
+            else{
+                console.log("Message: Empty");
+                window.alert("Please input valid data!")
+            }
+        }
+        function clearAll(){
+            console.log("Message:Clear method is called")
+            document.getElementById("f").value = "";
+            document.getElementById("c").value = "";
+        }
+    </script>
+    <style>
+        body{height: 726px;
+        width: 100%;
+        background-color: blanchedalmond;}
+        .material{
+            width: 100%;
+            height: 60%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .empty{
+            width: 100%;
+            height: 20%;
+            text-align: center;
+        }
+        .material .card{
+            width: 60%;
+            height: 60%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: black;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+        .card{
+            margin: auto;
+        }
+        #f{
+            width: 30%;
+            height: 20%;
+            border-radius: 5px;
+            border: none;
+            text-align: center;
+            color: #000;
+        }
+        #c{
+            width: 30%;
+            height: 20%;
+            border-radius: 5px;
+            border: none;
+            text-align: center;
+            color: #000;
+        }
+        #b{
+            width: 15%;
+            height: 20%;
+            border-radius: 5px;
+            border: none;
+            text-align: center;
+            color: #000;
+        }
+        footer{
+            font-size: 28px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="empty">
+        <h1>Temperature Converter</h1>
+    </div>
+    <div class="material">
+        <div class="card">
+            <input type="text" name="F" id="f" value="" placeholder="Fahrenheit..."></input>
+            <input type="text" name="C" id="c" value="" placeholder="Celsius..."></input>
+            <button name="" onclick="convert()" id="b"><i class="fas fa-sync-alt"></i></button>
+            <button type="button" id="b" onclick="clearAll()"><i class="far fa-trash-alt"></i></button>
+        </div>
+    </div>
+    <div class="empty">
+        <footer>&copy; Saurav Sanjay</footer>
+    </div>
+</body>
+</html>
