@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,49 +9,62 @@
 
     <title>Storage</title>
 </head>
+
 <body id="wholeBodyData">
-    <p id="myPara">Normal!</p>
-    <i class="fas fa-adjust" onclick="changeTheme()"></i>
+    <p id="myPara" style="text-align: center; font-size: larger; font-weight: bolder;"> </p>
+    <button onclick="changeNow()"
+        style="width: 100%; height: auto; border: none; padding: 5%; border-radius: 5rem; background: wheat;"><i
+            class="fas fa-adjust"></i></button>
     <script>
-        if(typeof(Storage) != "undefined")
-        {
-            window.localStorage.setItem("browserSupport","yes");
+        if (typeof (Storage) != "undefined") {
+            window.localStorage.setItem("browserSupport", "yes");
             console.log(window.localStorage.getItem("browserSupport"));
         }
-        else{
+        else {
             console.log("!");
         }
-        function changeTheme()
-        {
-            if(window.localStorage.getItem("currentThemeStatus"))
-            {
-                console.log("Yes");
-                changeNow();
+        // if `currentThemeStatus` is already set
+        if (window.localStorage.getItem("currentThemeStatus") != "undefined") {
+            setDefault();
+        }
+        else {
+            console.log("Not defined");
+            changeNow();
+        }
+
+        // load `currentThemeStatus`
+        function setDefault() {
+            var status = window.localStorage.getItem("currentThemeStatus");
+            if (status == "Light") {
+                var bodyRef = document.getElementById("wholeBodyData");
+                console.log(bodyRef.childNodes.item(1).firstChild.nodeValue = "Dark Mode is On");
+                bodyRef.style.background = "#000";
+                bodyRef.style.color = "#fff";
             }
-            else{
-                console.log("No");
-                window.localStorage.setItem("currentThemeStatus","Light");
-                changeNow();
+            else {
+                var bodyRef = document.getElementById("wholeBodyData");
+                console.log(bodyRef.childNodes.item(1).firstChild.nodeValue = "Light Mode is On");
+                bodyRef.style.background = "#fff";
+                bodyRef.style.color = "#000";
             }
         }
-        function changeNow()
-        {
+        function changeNow() {
             var status = window.localStorage.getItem("currentThemeStatus");
-            if(status == "Light")
-            {
-                var bodyRef = document.getElementById("wholeBodyData");
-                bodyRef.style.background="#000";
-                bodyRef.style.color="#fff";
-                window.localStorage.setItem("currentThemeStatus","Dark");
+            if (status == "Light") {
+                window.localStorage.setItem("currentThemeStatus", "Dark");
+                setDefault();
+
             }
-            else if(status == "Dark")
-            {
-                var bodyRef = document.getElementById("wholeBodyData");
-                bodyRef.style.background="#fff";
-                bodyRef.style.color="#000";
-                window.localStorage.setItem("currentThemeStatus","Light");
+            else if (status == "Dark") {
+                window.localStorage.setItem("currentThemeStatus", "Light");
+                setDefault();
+            }
+            else {
+                window.localStorage.setItem("currentThemeStatus", "Light");
+                setDefault();
             }
         }
     </script>
 </body>
+
 </html>
