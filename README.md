@@ -1,24 +1,19 @@
 # resources.github.io
+
 **This repository is for learning purpose only.**
 
->https://resourcesatresource.github.io **By** [*Saurav Sanjay*](https://github.com/sauravsanjay0809)
+> Maintained **By** [_Saurav Sanjay_](https://github.com/saurav-sanjay)
 
-1. Temperature Converter:
-https://resourcesatresource.github.io/resource
+1. [Temperature Converter](https://resourcesatresource.github.io/resource)
 
-2. Meet:
-https://resourcesatresource.github.io/meet/
+2. [Personal website v1](https://resourcesatresource.github.io/site/main)
 
-3. Demo site:
-https://resourcesatresource.github.io/site/clear/
+3. [Personal website v0](https://resourcesatresource.github.io/site/clear)
 
-4. Personal website:
-https://resourcesatresource.github.io/site/main/
+4. [Theme](https://resourcesatresource.github.io/resForDark)
 
-5. Theme demo:
-https://resourcesatresource.github.io/resForDark/
+5. [Link Tree](https://saurav-sanjay.github.io)
 
-6. Link Tree:
-    1. https://resourcesatresource.github.io/myProfile/
-    
-    2. https://sauravsanjay0809.github.io/links/
+   1. [v1](https://saurav-sanjay.github.io/links)
+
+   2. [v0](https://resourcesatresource.github.io/my-profile)
